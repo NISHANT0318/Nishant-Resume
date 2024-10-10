@@ -53,10 +53,10 @@ const App: React.FC = () => {
             <a href="https://www.linkedin.com/in/nishant-satone" target="_blank" rel="noopener noreferrer" className="text-[#58A6FF]">
               <Linkedin className="w-8 h-8" />
             </a>
-            <a href="https://github.com/NishantSatone" target="_blank" rel="noopener noreferrer" className="text-[#58A6FF]">
+            <a href="https://github.com/NISHANT0318/" target="_blank" rel="noopener noreferrer" className="text-[#58A6FF]">
               <Github className="w-8 h-8" />
             </a>
-            <a href="https://nishant-satone.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#58A6FF]">
+            <a href="https://nishant-satone.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-[#58A6FF]">
               <Globe className="w-8 h-8" />
             </a>
           </div>
