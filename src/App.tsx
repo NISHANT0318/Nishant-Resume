@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Linkedin, Github, Globe } from 'lucide-react';
 
 const App: React.FC = () => {
   const downloadResume = () => {
-    window.open('https://drive.google.com/file/d/18_zozk9atwxD4TBfN0jwuua5nK_TOVza/view?usp=sharing');
+    window.open('/nishantsatone.pdf');
   };
 
   return (
