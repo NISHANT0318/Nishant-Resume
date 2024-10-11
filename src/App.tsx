@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Linkedin, Github, Globe } from 'lucide-react';
 
 const App: React.FC = () => {
   const downloadResume = () => {
-    window.open('./nishantsatone.pdf');
+    window.open('/nishantsatone.pdf');
   };
 
   return (
