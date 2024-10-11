@@ -1,12 +1,16 @@
-import React from 'react'
-import { Mail, Phone, MapPin, Linkedin, Github, Globe } from 'lucide-react'
+import React from 'react';
+import { Mail, Phone, MapPin, Linkedin, Github, Globe } from 'lucide-react';
 
 const App: React.FC = () => {
+  const downloadResume = () => {
+    window.open('./nishantsatone.pdf');
+  };
+
   return (
     <div className="min-h-screen bg-[#1E2532] text-white p-8">
-      <div className="max-w-6xl mx-auto bg-[#1E2532] shadow-2xl rounded-lg overflow-hidden flex">
-    
-        <div className="w-1/3 bg-[#15202B] p-8">
+      <div className="max-w-6xl mx-auto bg-[#1E2532] shadow-2xl rounded-lg overflow-hidden flex flex-col lg:flex-row">
+        
+        <div className="lg:w-1/3 bg-[#15202B] p-8">
           <h1 className="text-4xl font-bold mb-4">NISHANT SATONE</h1>
           <div className="space-y-2">
             <a href="mailto:Nishantsatone1997@gmail.com" className="flex items-center text-[#8B949E]">
@@ -28,12 +32,12 @@ const App: React.FC = () => {
             <li>React.js, Redux</li>
             <li>JavaScript (ES6+)</li>
             <li>HTML5, CSS3</li>
-            <li>AWS</li>
             <li>RESTful APIs</li>
+            <li>API Authentication</li>
             <li>Jest</li>
             <li>Git, NPM</li>
+            <li>SQL</li>
             <li>Vite, Webpack</li>
-            
           </ul>
 
           <h2 className="text-2xl font-bold mt-8 mb-4 text-[#58A6FF]">EDUCATION</h2>
@@ -60,13 +64,20 @@ const App: React.FC = () => {
               <Globe className="w-8 h-8" />
             </a>
           </div>
+
+          <button
+            onClick={downloadResume}
+            className="mt-8 px-4 py-2 bg-[#58A6FF] text-white font-semibold rounded hover:bg-[#0064C8] transition duration-300"
+          >
+            Download Resume
+          </button>
         </div>
 
-        {/* Right Column */}
-        <div className="w-2/3 p-8">
+        
+        <div className="lg:w-2/3 p-8">
           <h2 className="text-2xl font-bold mb-4 text-[#58A6FF]">PROFESSIONAL SUMMARY</h2>
           <p className="mb-8 text-[#8B949E]">
-            Experienced Front-End Developer with 2+ years of expertise in designing and developing user interfaces using React.js, HTML5, CSS3, and JavaScript (ES6+). Proficient in collaborating with product and design teams to build intuitive and visually appealing interfaces for web applications. Strong skills in cloud deployment AWS, API integration, and unit testing. Focused on writing clean, maintainable, and scalable code, and committed to delivering high-quality, performance-optimized UI components
+            Experienced Front-End Developer with 2+ years of expertise in designing and developing user interfaces using React.js, HTML5, CSS3, and JavaScript (ES6+). Proficient in collaborating with product and design teams to build intuitive and visually appealing interfaces for web applications. Strong skills in deployment of an application, API integration, and unit testing. Focused on writing clean, maintainable, and scalable code, and committed to delivering high-quality, performance-optimized UI components.
           </p>
 
           <h2 className="text-2xl font-bold mb-4 text-[#58A6FF]">WORK HISTORY</h2>
@@ -76,7 +87,6 @@ const App: React.FC = () => {
             <ul className="list-disc list-inside mt-2 space-y-1 text-[#8B949E]">
               <li>Developed responsive web applications using React.js, Redux, HTML5, CSS3, and JavaScript (ES6+).</li>
               <li>Optimized and built reusable React components, reducing development time by 20%.</li>
-              <li>Implemented React Hooks for efficient state management and handling side effects.</li>
               <li>Integrated RESTful APIs with authentication for seamless data fetching and user management.</li>
               <li>Conducted unit testing using Jest and React Testing Library to ensure code quality and reliability.</li>
               <li>Collaborated with UI/UX designers to transform wireframes into engaging user interfaces.</li>
@@ -91,19 +101,22 @@ const App: React.FC = () => {
               <strong className="text-white">CrickDex:</strong>{' '}
               <a href="https://crickdex.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-[#58A6FF] hover:underline">
                 CrickDex
-              </a> – A player identifier app where users can upload a photo, and an AI analyzes the image, identifies the player, and provides detailed information using the Gemini AI API.
+              </a>{' '}
+              – A player identifier app where users can upload a photo, and an AI analyzes the image, identifies the player, and provides detailed information using the Gemini AI API.
             </li>
             <li>
               <strong className="text-white">QuestionX:</strong>{' '}
               <a href="https://questionx.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-[#58A6FF] hover:underline">
                 QuestionX
-              </a> – A chatbot that answers user queries on any topic, functioning like ChatGPT or Gemini, offering accurate and real-time responses.
+              </a>{' '}
+              – A chatbot that answers user queries on any topic, functioning like ChatGPT or Gemini, offering accurate and real-time responses.
             </li>
             <li>
               <strong className="text-white">Shopper Avenue:</strong>{' '}
               <a href="https://shopperavenue.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-[#58A6FF] hover:underline">
                 Shopper Avenue
-              </a> – An e-commerce website that allows users to browse, search, and purchase products.
+              </a>{' '}
+              – An e-commerce website that allows users to browse, search, and purchase products.
             </li>
           </ul>
 
@@ -111,12 +124,12 @@ const App: React.FC = () => {
           <ul className="list-disc list-inside space-y-2 text-[#8B949E]">
             <li>Reduced application load time by 30% through optimizing React components and implementing lazy loading techniques.</li>
             <li>Implemented a state management solution using Redux, improving application performance and maintainability.</li>
-            <li>Mentored junior developers, leading to improved team productivity and code quality.</li>
+            
           </ul>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
